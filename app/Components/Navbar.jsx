@@ -68,7 +68,7 @@ const Navbar = () => {
           <button className="cursor-pointer">
             <Image src={assets.moon_icon} alt="" className="w-4" />
           </button>
-          <button className="cursor-pointer items-center px-8 py-2 border-2 rounded-full text-purple-600 text-lg hover:bg-purple-600 hover:text-white border-purple-600 flex gap-2 font-semibold">
+          <button className="hidden md:flex  cursor-pointer items-center px-8 py-2 border-2 rounded-full text-purple-600 text-lg hover:bg-purple-600 hover:text-white border-purple-600 gap-2 font-semibold">
             <h2>Contact Me</h2>
             
           </button>

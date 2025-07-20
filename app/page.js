@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import About from './Components/About';
 import Projects from './Components/Projects';
+import Skills from './Components/Skills';
 
 const page = () => {
   return (
@@ -11,7 +12,8 @@ const page = () => {
       <Navbar />
       <Header />
       <About />
-      <Projects/>
+      <Projects />
+      <Skills/>
     </div>
   );
 };
