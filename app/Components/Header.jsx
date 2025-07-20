@@ -5,7 +5,8 @@ import React from 'react';
 import profilePic from '../../assets/profile.jpg'
 import DecryptedText from '../textAnimation/DecryptedText/DecryptedText';
 import { LiaDownloadSolid } from 'react-icons/lia';
-import Button from './Button';
+import Link from 'next/link';
+
 const Header = () => {
   return (
     <div className="mt-28 mx-auto">
@@ -20,7 +21,7 @@ const Header = () => {
         Hi! I'm Sheikh Minhajul Abedin{' '}
         <Image src={assets.hand_icon} alt="" className="w-6" />{' '}
       </h1>
-      <h1 className="text-3xl sm:text-6xl lg:text-[50px] font-[SUSE] flex items-center justify-center">
+      <h1 className="text-3xl sm:mx-auto lg:text-[50px] font-[SUSE] flex items-center justify-center">
         <DecryptedText
           text="A Full Stack Web Developer"
           speed={150}
@@ -33,18 +34,39 @@ const Header = () => {
           revealDirection="center"
         />
       </h1>
-      <p className="font-[Raleway] text-center text-md w-1/2 mx-auto mt-4">
+      <p className="font-[Raleway] text-center text-md md:w-1/2 mx-auto mt-4">
         I build performant, scalable web applications and APIs, combining
         seamless frontend experiences with powerful backend engineering.{' '}
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 justify-center">
-        <Button />
+        <Link href="https://github.com/abedinalways">
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material-outlined/24/github.png"
+            alt="github"
+            target='_blank'
+          />
+        </Link>
+        <Link href="https://www.linkedin.com/in/sheikh-minhajul-abedin/">
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/color/48/linkedin.png"
+            alt="linkedin"
+            target='_blank'
+          />
+        </Link>
+
         <a
           href="/Sheikh Minhajul Abedin-Full Stack Developer.pdf"
           download
           className="px-8 py-2 border-2 rounded-full text-purple-600 text-lg hover:bg-purple-600 hover:text-white border-purple-600 flex items-center gap-2 font-semibold"
         >
-          <span className='flex items-center'> My Resume <LiaDownloadSolid /></span>
+          <span className="flex items-center">
+            {' '}
+            My Resume <LiaDownloadSolid />
+          </span>
         </a>
       </div>
     </div>

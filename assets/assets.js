@@ -10,9 +10,16 @@ import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
 import mongodb from './mongodb.png';
+import express from './express.png';
+import next from './next.png';
+import framer from './framer.png';
+import jwt from './jwt.png';
+import node from './node.png';
+import mySQL from './mysql.png';
+import stripe from './stripe.png';
+import React from './react.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
-
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-pic.png';
@@ -35,7 +42,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-import picture from './picture3.png'
+import picture from './picture3.png';
+import react_gif from './react.gif';
 export const assets = {
     user_image,
     code_icon,
@@ -48,6 +56,15 @@ export const assets = {
     firebase,
     figma,
     git,
+    express,
+    node,
+    mySQL,
+    next,
+    jwt,
+    framer,
+    stripe,
+    React,
+    react_gif,
     mongodb,
     right_arrow_white,
     logo,
@@ -113,5 +130,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git,assets.React, assets.next, assets.jwt, assets.express, assets.mySQL, assets.framer, assets.node, assets.stripe
 ];
