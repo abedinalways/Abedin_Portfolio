@@ -32,15 +32,18 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "Sheikh Minhajul Abedin",
-  description: "",
+  title: 'Sheikh Minhajul Abedin',
+  description: 'portfolio',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="en" className='scroll-smooth dark'>
       <body
-        className={`${sora.className} ${ovo.className} ${suse.className} ${poppins.className} ${mulish.className} ${raleway.className} ${outfit.className} antialiased leading-8 overflow-x-hidden`}
+        className={`${sora.className} ${ovo.className} ${suse.className} ${poppins.className} ${mulish.className} ${raleway.className} ${outfit.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark-text-white`}
       >
         {children}
       </body>

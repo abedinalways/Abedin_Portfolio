@@ -95,7 +95,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="w-full px-4 sm:px-6 md:px-[10%] py-12">
+    <div id="project" className="w-full px-4 sm:px-6 md:px-[10%] py-12">
       {/* Heading */}
       <small className="text-purple-600 font-semibold tracking-wider uppercase text-xs  mt-4 flex items-center justify-center text-center gap-1">
         What I have built
@@ -109,7 +109,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-xl shadow-md border border-gray-200 p-4 cursor-pointer hover:bg-purple-50 hover:-translate-y-1 duration-300 hover:shadow-lg"
+            className="bg-white rounded-xl shadow-md border border-gray-400 p-4 cursor-pointer hover:bg-purple-50 hover:-translate-y-1 duration-300 hover:shadow-lg"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}

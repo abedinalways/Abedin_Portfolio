@@ -62,9 +62,9 @@ const Skills = () => {
       title: 'Tools & Others',
       icon: '🛠️',
       skills: [
-        { name: 'Git/GitHub', level: 90, color: '#F05032' },
+        { name: 'Git/GitHub', level: 90, color: '#575757' },
         { name: 'VS Code', level: 95, color: '#007ACC' },
-        { name: 'Figma', level: 75, color: '#F24E1E' },
+        { name: 'Figma', level: 75, color: '#f10400' },
         { name: 'Postman', level: 85, color: '#FF6C37' },
         { name: 'Vercel', level: 80, color: '#000000' },
         { name: 'Docker', level: 60, color: '#2496ED' },
@@ -176,7 +176,7 @@ const Skills = () => {
   };
 
   return (
-    <div id='skills' className="py-16 px-4 sm:px-6 lg:px-[12%]  min-h-screen">
+    <div id="skills" className="py-16 px-4 sm:px-6 lg:px-[12%]  min-h-screen">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -201,7 +201,7 @@ const Skills = () => {
         {/* Tab Navigation */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row justify-center mb-12 gap-4"
+          className="flex flex-col sm:flex-row justify-center mb-10 gap-4"
         >
           {Object.entries(skillsData).map(([key, data]) => (
             <motion.button
@@ -244,7 +244,7 @@ const Skills = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300"
+                  className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-400"
                 >
                   <div className="flex justify-between items-center mb-2">
                     <span className="font-semibold text-gray-800">
@@ -275,12 +275,12 @@ const Skills = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="bg-white rounded-2xl p-6 shadow-xl"
+              className="bg-white rounded-2xl p-6 shadow-xl border border-gray-400"
             >
               <h4 className="text-xl font-bold text-center mb-4 text-gray-800">
                 Skills Overview
               </h4>
-              <div className="h-64 relative">
+              <div className="h-52 relative">
                 <Doughnut
                   data={createChartData(skillsData[activeTab].skills)}
                   options={chartOptions}
@@ -293,19 +293,17 @@ const Skills = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="bg-white rounded-2xl p-6 shadow-xl"
+              className="bg-white rounded-2xl p-6 shadow-xl border border-gray-400"
             >
               <h4 className="text-xl font-bold text-center mb-4 text-gray-800">
                 Proficiency Levels
               </h4>
-              <div className="h-64">
+              <div className="h-52">
                 <Bar data={barChartData} options={barOptions} />
               </div>
             </motion.div>
           </div>
         </motion.div>
-
-       
       </motion.div>
     </div>
   );

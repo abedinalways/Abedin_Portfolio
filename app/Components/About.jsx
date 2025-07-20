@@ -1,10 +1,13 @@
 import { assets, toolsData } from '@/assets/assets';
 import Image from 'next/image';
-
+import { motion } from 'motion/react';
 const About = () => {
   return (
     <>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{duration:1}}
         id="about"
         className="scroll-mt-20 py-6 sm:py-10 px-4 sm:px-6 md:px-[12%]"
       >
@@ -95,7 +98,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -5,6 +5,9 @@ import Header from './Components/Header';
 import About from './Components/About';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
+import Education from './Components/Education';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 const page = () => {
   return (
@@ -13,7 +16,10 @@ const page = () => {
       <Header />
       <About />
       <Projects />
-      <Skills/>
+      <Skills />
+      <Education />
+      <Contact />
+      <Footer/>
     </div>
   );
 };

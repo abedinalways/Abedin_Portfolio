@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 
+
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
@@ -41,8 +42,8 @@ const Navbar = () => {
               alt="logo"
               className="w-10 cursor-pointer"
             />
-            <h1 className="font-[SUSE] text-2xl font-bold text-purple-900">
-              ABEDIN.
+            <h1 className="font-[SUSE] text-2xl font-bold text-[#6246EC]">
+              ABEDIN <span className='text-purple-800 font-bold'>.</span>
             </h1>
           </span>
         </Link>
@@ -51,26 +52,24 @@ const Navbar = () => {
             isScroll ? '' : 'bg-white shadow-sm bg-opacity-50'
           }`}
         >
-          <li className="hover:text-purple-600">
+          <li className="hover:text-[#6246EC]">
             <a href="#project">Project</a>
           </li>
-          <li className="hover:text-purple-600">
-            <a href="#skill">Skill</a>
+          <li className="hover:text-[#6246EC]">
+            <a href="#skills">Skill</a>
           </li>
-          <li className="hover:text-purple-600">
+          <li className="hover:text-[#6246EC]">
             <a href="#about">About Me</a>
           </li>
-          <li className="hover:text-purple-600">
+          <li className="hover:text-[#6246EC]">
             <a href="#education">Education</a>
           </li>
         </ul>
         <div className="flex items-center gap-4">
-          <button className="cursor-pointer">
-            <Image src={assets.moon_icon} alt="" className="w-4" />
-          </button>
-          <button className="hidden md:flex  cursor-pointer items-center px-8 py-2 border-2 rounded-full text-purple-600 text-lg hover:bg-purple-600 hover:text-white border-purple-600 gap-2 font-semibold">
-            <h2>Contact Me</h2>
-            
+          
+          
+          <button className="hidden md:flex  cursor-pointer items-center px-8 py-2 border-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white gap-2 font-semibold">
+            <a href="#contact">Contact Me</a>
           </button>
 
           <button
@@ -98,7 +97,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#skill" onClick={closeMenu}>
+            <a href="#skills" onClick={closeMenu}>
               Skill
             </a>
           </li>
@@ -113,7 +112,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#contactMe" onClick={closeMenu}>
+            <a href="#contact" onClick={closeMenu}>
               Contact Me
             </a>
           </li>
