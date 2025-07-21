@@ -110,7 +110,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/Sheikh Minhajul Abedin-Full Stack Developer.pdf"
+          href="/Sheikh Minhajul Abedin.pdf"
           download
           className="px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 border-2 rounded-full text-sm sm:text-base lg:text-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white flex items-center gap-2 font-semibold transition-all duration-300 hover:shadow-lg"
         >
