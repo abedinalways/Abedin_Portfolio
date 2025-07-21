@@ -104,10 +104,7 @@ const Education = () => {
   };
 
   return (
-    <div
-      id="education"
-      className="py-16 px-4 sm:px-6 lg:px-[12%]"
-    >
+    <div id="education" className="py-16 px-4 sm:px-6 lg:px-[12%]">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -153,7 +150,7 @@ const Education = () => {
                 {/* Timeline Icon */}
                 <motion.div
                   variants={iconVariants}
-                  className={`absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 w-12 h-12 bg-gradient-to-r ${edu.gradient} rounded-full flex items-center justify-center text-white shadow-md z-10`}
+                  className={`absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 w-12 h-12 bg-gradient-to-r ${edu.gradient} rounded-full flex items-center justify-center text-white shadow-md z-10 `}
                 >
                   {edu.icon}
                 </motion.div>
@@ -165,7 +162,7 @@ const Education = () => {
                   }`}
                 >
                   <motion.div
-                    className={`bg-gradient-to-br ${edu.bgGradient} rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-white/60`}
+                    className={`bg-gradient-to-br ${edu.bgGradient} rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-400 `}
                     whileHover={{ scale: 1.02, y: -5 }}
                     onClick={() =>
                       setActiveCard(activeCard === edu.id ? null : edu.id)
