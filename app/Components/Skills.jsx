@@ -17,7 +17,7 @@ ChartJS.register(
   Legend,
   CategoryScale,
   LinearScale,
-  BarElement
+  BarElement,
 );
 
 const Skills = () => {
@@ -40,10 +40,16 @@ const Skills = () => {
       icon: '🎨',
       skills: [
         { name: 'React.js', level: 90, color: '#61DAFB' },
-        { name: 'Next.js', level: 85, color: '#000000' },
+        { name: 'Next.js', level: 88, color: '#000000' },
+        { name: 'TypeScript', level: 84, color: '#3178C6' },
         { name: 'JavaScript', level: 88, color: '#F7DF1E' },
         { name: 'Tailwind CSS', level: 92, color: '#06B6D4' },
         { name: 'HTML/CSS', level: 95, color: '#E34F26' },
+        { name: 'RTK Query', level: 82, color: '#764ABC' },
+        { name: 'TanStack Query', level: 80, color: '#FF4154' },
+        { name: 'Authentication', level: 85, color: '#4ECDC4' },
+        { name: 'Socket.io-client', level: 76, color: '#111827' },
+        { name: 'GSAP', level: 78, color: '#88CE02' },
       ],
     },
     backend: {
@@ -55,7 +61,6 @@ const Skills = () => {
         { name: 'MongoDB', level: 80, color: '#47A248' },
         { name: 'MySQL', level: 70, color: '#336791' },
         { name: 'RESTful APIs', level: 88, color: '#FF6B6B' },
-        { name: 'Authentication', level: 85, color: '#4ECDC4' },
       ],
     },
     tools: {
@@ -115,7 +120,7 @@ const Skills = () => {
         label: 'Proficiency Level',
         data: skillsData[activeTab].skills.map(skill => skill.level),
         backgroundColor: skillsData[activeTab].skills.map(
-          skill => skill.color + '30'
+          skill => skill.color + '30',
         ),
         borderColor: skillsData[activeTab].skills.map(skill => skill.color),
         borderWidth: 2,
@@ -150,7 +155,12 @@ const Skills = () => {
       },
       x: {
         grid: { display: false },
-        ticks: { color: '#666', maxRotation: 45 },
+        ticks: {
+          color: '#666',
+          maxRotation: 45,
+          minRotation: 25,
+          autoSkip: false,
+        },
       },
     },
   };
@@ -176,7 +186,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="skills" className="py-16 px-4 sm:px-6 lg:px-[12%]  min-h-screen">
+    <div id="skills" className="py-16 px-4 sm:px-6 lg:px-[12%] min-h-screen">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -184,7 +194,6 @@ const Skills = () => {
         animate={mainControls}
         className="max-w-7xl mx-auto"
       >
-        {/* Header */}
         <motion.div variants={itemVariants} className="text-center mb-12">
           <small className="text-purple-600 font-semibold tracking-wider uppercase text-xs">
             Technical Expertise
@@ -193,12 +202,12 @@ const Skills = () => {
             My Technical Skills & Expertise
           </h2>
           <p className="text-gray-600 font-[Raleway] text-lg max-w-2xl mx-auto">
-            Proficient in modern web technologies with hands-on experience in
-            building scalable applications
+            Specialized in building performant, scalable, and user-focused
+            frontend applications using modern frameworks, state management,
+            authentication flows, and interactive animations.
           </p>
         </motion.div>
 
-        {/* Tab Navigation */}
         <motion.div
           variants={itemVariants}
           className="flex flex-col sm:flex-row justify-center mb-10 gap-4"
@@ -222,7 +231,6 @@ const Skills = () => {
           ))}
         </motion.div>
 
-        {/* Skills Content */}
         <motion.div
           key={activeTab}
           initial={{ opacity: 0, x: 20 }}
@@ -230,7 +238,6 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="grid lg:grid-cols-2 gap-8 lg:gap-12"
         >
-          {/* Skills List */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
               <span className="text-3xl">{skillsData[activeTab].icon}</span>
@@ -268,9 +275,7 @@ const Skills = () => {
             </div>
           </div>
 
-          {/* Charts */}
           <div className="space-y-8">
-            {/* Doughnut Chart */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -280,7 +285,7 @@ const Skills = () => {
               <h4 className="text-xl font-bold text-center mb-4 text-gray-800">
                 Skills Overview
               </h4>
-              <div className="h-52 relative">
+              <div className="h-64 relative">
                 <Doughnut
                   data={createChartData(skillsData[activeTab].skills)}
                   options={chartOptions}
@@ -288,7 +293,6 @@ const Skills = () => {
               </div>
             </motion.div>
 
-            {/* Bar Chart */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -298,7 +302,7 @@ const Skills = () => {
               <h4 className="text-xl font-bold text-center mb-4 text-gray-800">
                 Proficiency Levels
               </h4>
-              <div className="h-52">
+              <div className="h-72">
                 <Bar data={barChartData} options={barOptions} />
               </div>
             </motion.div>

@@ -49,7 +49,7 @@ const Header = () => {
         className="text-2xl sm:text-3xl lg:text-[50px] font-[SUSE] flex items-center justify-center mb-4 sm:mb-6"
       >
         <DecryptedText
-          text="A Full Stack Web Developer"
+          text="A Front-end Web Developer"
           speed={100}
           maxIterations={20}
           characters="M E R N N R E M E R N M M E R N"
@@ -67,8 +67,9 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="font-[Raleway] text-center text-sm sm:text-base lg:text-lg w-full sm:w-3/4 lg:w-1/2 mx-auto mt-4 px-4 sm:px-0 leading-relaxed text-gray-700"
       >
-        I build performant, scalable web applications and APIs, combining
-        seamless frontend experiences with powerful backend engineering.
+        I build performant, scalable, and user-friendly web applications,
+        crafting seamless frontend experiences with modern technologies and
+        clean, maintainable code.
       </motion.p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mt-6 sm:mt-8 justify-center">
@@ -110,7 +111,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/Sheikh Minhajul Abedin.pdf"
+          href="/CV.pdf"
           download
           className="px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 border-2 rounded-full text-sm sm:text-base lg:text-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white flex items-center gap-2 font-semibold transition-all duration-300 hover:shadow-lg"
         >

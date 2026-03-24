@@ -8,89 +8,87 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'FitForge- A Fitness Platform',
+      title: 'TableRounds- A modern, scalable, and feature-rich Quiz platformm',
       description:
-        'FitForge – Full-Stack Fitness Platform Empowered by Stripe payments, Firebase authentication, and an admin dashboard for trainer and user management.',
-      image: 'https://i.ibb.co/bg0yY1Wv/fitforge.png',
-      demoLink: 'https://fitforge-5c5d1.web.app/',
-      githubLink: 'https://github.com/abedinalways/QuickLance-Client',
+        'A full-stack quiz ecosystem where participants can take subject-specific tests, track their performance with detailed statistics, measure their knowledge across selected topics, and connect with other participants through built-in messaging.',
+      image:
+        'https://i.ibb.co.com/Zp88vs6y/Screenshot-from-2026-03-24-22-59-36.png',
+      demoLink: 'https://tablerounds.ai',
+      githubLink: '',
       modalContent: {
         bannerImage:
-          'https://i.ibb.co/rG9Y3bgK/Screenshot-2025-07-16-232702.png',
+          'https://i.ibb.co.com/Zp88vs6y/Screenshot-from-2026-03-24-22-59-36.png',
         techStack: [
           'React',
-          'Stripe',
-          'Dashboard',
-          'Firebase',
-          'Admin Panel',
-          'MongoDB',
+          'Next.js',
+          'Typescript',
+          'Socket.io-cilent',
+          'RTK Query',
+          'React Leaflet',
+          'TiPTap',
         ],
         description:
-          'The frontend of FitForge, a fitness platform, provides a responsive and user-friendly interface for members to apply as trainers, booking trainer, payment by Stripe, view their application status, and interact with fitness-related features. ',
+          'A full-stack quiz ecosystem where participants can take subject-specific tests, track their performance with detailed statistics, measure their knowledge across selected topics, and connect with other participants through built-in messaging.',
+        image:
+          'https://i.ibb.co.com/DgQXV4TP/Screenshot-from-2026-03-24-23-01-13.png ',
         challenges: [
-          'One Dashboard for Different users-Admin, Trainer, Member',
-          'Payment Gateway By Stripe',
-          'Trainer application for general people',
-          'Integrating Firebase, pagination in all pages',
+          'Create and participate in quizzes and tests',
+          'Review completed tests with detailed answer analysis',
+          'View earned marks, correct answers, and incorrect answers',
+          'Track performance through statistics and leaderboards',
+          'Manage personal profile and user settings',
+          'Access support messaging and notifications',
         ],
         futureImprovements: [
-          'improve backend funtionality',
-          'Enhance search functionality',
+          'improve messaging functionality',
+          'Enhance Quiz system more animated',
         ],
       },
     },
     {
-      title: 'StackMind - A Web Blog Platform',
+      title: 'Kreatovate -AI-powered marketing and business consulting company',
       description:
-        'StackMind is a Web Blog platform built with React & MERN Stack. It provides a responsive UI to browse blogs, post content, and bookmark favorite blogs.',
-      image: 'https://i.ibb.co/TxM7wyNX/stack-Mind-app.png',
-      demoLink: 'https://stackmind-auth.web.app/',
-      githubLink: 'https://github.com/abedinalways/StackMind-Client',
+        'Developed a suite of three production-grade web applications for Kreatovate, an AI-powered marketing and consulting company, enabling brand presentation, workforce engagement, and creative campaign experiences.',
+      image:
+        'https://i.ibb.co.com/0yhdyQ48/Screenshot-from-2026-03-24-23-10-44.png',
+      demoLink: 'https://kreatovate.com',
+      githubLink: '',
       modalContent: {
-        bannerImage: 'https://i.ibb.co/TxM7wyNX/stack-Mind-app.png',
+        bannerImage:
+          'https://i.ibb.co.com/0yhdyQ48/Screenshot-from-2026-03-24-23-10-44.png',
         techStack: [
           'React',
-          'Firebase',
-          'Context API',
-          'JWT',
-          'Express.js',
-          'MongoDB',
-          'DaisyUI',
+          'Next.js',
+          'Typescript',
+          'RTK Query',
+          'GSAP',
+          'GHL',
         ],
         description:
-          'StackMind is the frontend for a Web Blog platform, built with React. It provides a responsive UI to browse blogs, post content, manage user accounts, and interact with backend APIs.',
+          'Developed a suite of three production-grade web applications for Kreatovate, an AI-powered marketing and consulting company, enabling brand presentation, workforce engagement, and creative campaign experiences.',
         challenges: [
-          'Real-time sync issues',
-          'State management',
-          'UI optimization',
+          'Connected and integrated GHL',
+          'integrated GSAP as per client demand ',
         ],
-        futureImprovements: [
-          'Add notifications',
-          'Implement dark mode',
-          'Improve SEO',
-        ],
+        futureImprovements: ['Add more features', 'Improve animation'],
       },
     },
     {
-      title: 'Sohay – Mobile Banking Web App',
+      title: 'CYBRS Cybersecurity Platform',
       description:
-        'Sohay makes mobile banking accessible to everyone with bill payments, money transfers & micro-credit access through a simple UI.',
-      image: 'https://i.ibb.co/20F8tXpf/sohay-app.png',
-      demoLink: 'https://sohay-auth.web.app/',
-      githubLink: 'https://github.com/abedinalways/Sohay-App',
+        'Developed a modern, multilingual cybersecurity platform for CYBRS, powered by Smart Plan for Information Technology (SPIT), focused on delivering secure solutions with a premium user experience.',
+      image:
+        'https://i.ibb.co.com/bMVGQXjH/Screenshot-from-2026-03-24-23-29-31.png',
+      demoLink: 'https://kliege-frontend.vercel.app/en/',
+      githubLink: '',
       modalContent: {
-        bannerImage: 'https://i.ibb.co/20F8tXpf/sohay-app.png',
-        techStack: [
-          'React',
-          'TailwindCSS',
-          'React Router',
-          'Firebase',
-          'DaisyUI',
-        ],
+        bannerImage:
+          'https://i.ibb.co.com/bMVGQXjH/Screenshot-from-2026-03-24-23-29-31.png',
+        techStack: ['Next.js', 'Typescript', 'GSAP', 'Lenis', 'TailwindCSS'],
         description:
-          'Sohay is a modern mobile banking SPA that brings essential & advanced banking services to your fingertips. From bill payments to micro-credit services, Sohay empowers users with secure transactions.',
-        challenges: ['Payment integration', 'SEO optimization'],
-        futureImprovements: ['Add blog section', 'Improve loading speed'],
+          'Developed a modern, multilingual cybersecurity platform for CYBRS, powered by Smart Plan for Information Technology (SPIT), focused on delivering secure solutions with a premium user experience.',
+        challenges: ['Language switching', 'SEO optimization'],
+        futureImprovements: ['Add more features', 'Improve animation'],
       },
     },
   ];
